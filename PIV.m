@@ -4,13 +4,13 @@ close all
 tic
 % cd('C:\pictures') %Location
 
-img1 = imread('02a-naca23012_dinamico_24deg_fin1_1_a.bmp'); %Input 1st frame
-img2 = imread('02b-naca23012_dinamico_24deg_fin1_1_b.bmp'); %Input 2nd frame
+img1 = imread('...'); %Input 1st frame
+img2 = imread('...'); %Input 2nd frame
 
 icorr=1;            %Number of Correction Cycle
 Rlimit=0.4;         %Minimum valid R:
 
-iw=32; %Interrodation Windows Sizes (pixel)
+iw=32; %Interrogation Windows Sizes (pixel)
 sw=96; %Search Windows Sizes (sw > iw) (pixel)
 
 iw=2*round(iw/2)-1; %Even->Odd
